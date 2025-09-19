@@ -1,0 +1,41 @@
+# Backend (Java)
+packages/backend/target/
+packages/backend/.mvn/
+packages/backend/*.log
+packages/backend/.idea/
+packages/backend/.classpath
+packages/backend/.project
+packages/backend/.settings/
+packages/backend/.vscode/
+
+# Frontend (Flutter/Dart)
+packages/frontend/.dart_tool/
+packages/frontend/.idea/
+packages/frontend/.metadata
+packages/frontend/build/
+packages/frontend/ios/Flutter/AppFrameworkInfo.plist
+packages/frontend/ios/Flutter/ephemeral/
+packages/frontend/ios/Flutter/Generated.xcconfig
+packages/frontend/ios/Flutter/Debug.xcconfig
+packages/frontend/ios/Flutter/Release.xcconfig
+packages/frontend/ios/Runner.xcworkspace/
+packages/frontend/ios/Runner.xcodeproj/
+packages/frontend/ios/RunnerTests/
+packages/frontend/android/.gradle/
+packages/frontend/android/local.properties
+packages/frontend/android/app/build/
+packages/frontend/android/build/
+packages/frontend/linux/build/
+packages/frontend/macos/build/
+packages/frontend/windows/build/
+packages/frontend/web/build/
+packages/frontend/pubspec.lock
+packages/frontend/flutter_export_environment.sh
+
+# General
+**/.DS_Store
+**/Thumbs.db
+**/.vscode/
+**/.env
+# Node modules
+/node_modules

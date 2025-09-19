@@ -1,0 +1,23 @@
+{
+  "name": "app-flutter-monorepo",
+  "version": "1.0.0",
+  "description": "Monorepo para aplicación Flutter con backend Java",
+  "private": true,
+  "scripts": {
+    "build:backend": "cd packages/backend && ./mvnw clean install",
+    "build:frontend": "cd packages/frontend && flutter build apk",
+    "run:backend": "cd packages/backend && ./mvnw spring-boot:run",
+    "run:frontend": "cd packages/frontend && flutter run",
+    "build": "npm run build:backend && npm run build:frontend",
+    "run": "concurrently \"npm run run:backend\" \"npm run run:frontend\"",
+    "clean:backend": "cd packages/backend && ./mvnw clean",
+    "clean:frontend": "cd packages/frontend && flutter clean",
+    "clean": "npm run clean:backend && npm run clean:frontend",
+    "test:backend": "cd packages/backend && ./mvnw test",
+    "test:frontend": "cd packages/frontend && flutter test",
+    "test": "npm run test:backend && npm run test:frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
