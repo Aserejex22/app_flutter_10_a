@@ -37,4 +37,9 @@ class RegisterViewModel extends ChangeNotifier{
     }
   }
 
+  //usernameController
+  final TextEditingController usernameController = TextEditingController();
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
+
 }
